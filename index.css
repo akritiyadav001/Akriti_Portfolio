@@ -4,15 +4,15 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color:#080808;
+    background-color:#0b0b0c;
     color:#fff;
 }
 #header{
     height: 100vh;
     width: 100%;
-    background-image: url("m.jpg");
+    background-image: url("new_ak_bg.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 130%;
     background-position: center;
 }
 .nav-container
@@ -105,6 +105,11 @@ nav ul li a:hover::after{
     color:#fff;
    /*  border: 1px solid red; */
    
+}
+.about-col-2 p
+{
+    text-align: justify;
+    padding-right: 10px;
 }
 /* .tab-titles
 {
