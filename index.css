@@ -4,7 +4,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color:#0b0b0c;
+    background-color:#09090c;
     color:#fff;
 }
 #header{
@@ -92,6 +92,7 @@ nav ul li a:hover::after{
 .about-col-1 img
 {
     width: 100%;
+    border:1px solid #ff004f;
 }
 .about-col-2
 {
