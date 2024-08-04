@@ -357,9 +357,9 @@ nav ul li a:hover::after{
     font-weight: 300;
     margin-top:20px;
 }
-#copyright i
+#copyright 
 {
-    color:#f01359;
+     color:blue;
 }
 .contact-right #confirm-submit
 {
