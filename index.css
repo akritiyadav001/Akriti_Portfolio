@@ -4,7 +4,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color:#09090c;
+     background-color:#09090c; 
     color:#fff;
 }
 #header{
@@ -31,7 +31,7 @@ nav ul
     display: flex;
     list-style-type: none;
     width: 500px; 
- /*    border: 1px solid red; */
+   /*   border: 1px solid red;  */
     justify-content: space-around;
 }
 nav ul li a{
@@ -86,7 +86,7 @@ nav ul li a:hover::after{
 }
 .about-col-1
 {
-   /*  border: 2px solid rgb(60, 0, 255);  */
+    
     flex-basis: 35%;   
 
 
@@ -94,8 +94,6 @@ nav ul li a:hover::after{
 .about-col-1 img
 {
     width: 100%;
-   
-    box-shadow:  0px 0px 20px  #4d4a4b  ;
     border-radius: 15px;
 }
 .about-col-2
@@ -108,6 +106,7 @@ nav ul li a:hover::after{
     font-size:60px;
     font-weight: bold;
     color:#fff;
+    margin-bottom: 10px;
    /*  border: 1px solid red; */
    
 }
@@ -115,6 +114,7 @@ nav ul li a:hover::after{
 {
     text-align: justify;
     padding-right: 10px;
+    line-height: 20px;
 }
 /* .tab-titles
 {
@@ -164,7 +164,7 @@ nav ul li a:hover::after{
 }
 .about-tab-content ul li span
 {
-    color:rgb(224, 132, 132);
+    color:rgb(248, 95, 95);
     font-size: 14px;
 }
 .about-tab-content ul li
@@ -196,6 +196,7 @@ nav ul li a:hover::after{
     font-weight: bold;
     color:#fff;
     margin-left:20px;
+    border: 1px solid red;
 }
 .services-list
 {
@@ -248,24 +249,37 @@ nav ul li a:hover::after{
     padding: 30px;
     justify-content:space-between;
     flex-wrap: wrap;
+    border: 1px solid green;
 }
 
 .contact-left
 {
-    padding: 40px;
+    padding: 40px; 
     flex-basis: 35%;
-   /*  border: 1px solid blue; */
+     border: 1px solid blue; 
 }
-.contact-left p
+.contact-left p, .social-media-icons, .download-resume
 {
-    margin: 10px 0px;
+     margin: 10px 0px 10px 20px;
 }
-.contact-right
+.contact-left .download-resume button
 {
-    padding: 40px;
-    flex-basis: 60%;
-   /*  border: 1px solid red; */
+    padding: 10px;
+    width: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2b2728;
+    height: 50px; 
+    border-radius: 6px;
+    border:0;
+    outline: none;
+    cursor: pointer;
 }
+.contact-left .download-resume button:hover
+{
+    box-shadow: 0px 0px 10px white;
+}
+
 .contact-left .social-media-icons a i
 {
     cursor: pointer;
@@ -291,11 +305,18 @@ nav ul li a:hover::after{
     border-radius: 5px;
     font-weight: 500;
 }
+.contact-right
+{
+    padding: 40px;
+    flex-basis: 60%;
+   /*  border: 1px solid red; */
+}
 .contact-right form
 {
     width: 100%;
     display: flex;
     flex-direction: column;
+    border:2px solid red;
 
 }
 .contact-right form input, textarea
@@ -309,6 +330,25 @@ nav ul li a:hover::after{
     background-color: #2b2728;
     font-size: 18px;
     border-radius:8px;
+}
+ .contact-right form button
+{
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2b2728;
+    height: 50px; 
+    border-radius: 6px;
+    border:0;
+    outline: none;
+    cursor: pointer;
+
+} 
+.contact-right form button:hover
+{
+    box-shadow: 0px 0px 10px white;
 }
 #copyright
 {
