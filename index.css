@@ -13,6 +13,7 @@ body{
     background-image: url("new_ak_bg.jpg");
     background-repeat: no-repeat;
     background-size: 100% 130%;
+    background-attachment: fixed;
     background-position: center;
 }
 .nav-container

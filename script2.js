@@ -16,19 +16,22 @@ function openTabContent(tabName)
 }
 
 
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxXVsabgUYXvc7ZMY_B556G5TIN_gXjWvW-NXectlr67s9fuv76HogcRrSN7nJrhLXS/exec'
-  const form = document.forms['submit-to-google-sheet']
 
-  const submitmsg = document.getElementById('confirm-submit')
+// Google sheet JavaScript
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {submitmsg.innerHTML ="Messeage sent successfully"
-        setTimeout(function(){
-            submitmsg.innerHTML = "";
-        },5000)
-        form.reset();
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyClxY7AetNtWD7Z-jwwkT2QhvINGrikFXNI2pRLAzaeD-ZclokFFE7QTsvhJztiQJA/exec'
+const form = document.forms['submit-to-google-sheet']
+const confirm_submit = document.getElementById("confirm-submit")
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response =>{
+      confirm_submit.innerHTML = "Message sent Successfully";
+      setTimeout(function(){
+        confirm_submit.innerHTML = ""
+      },5000)
+      form.reset();
     })
-      .catch(error => console.error('Error!', error.message))
-  })
+    .catch(error => console.error('Error!', error.message))
+})

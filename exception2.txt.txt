@@ -1,0 +1,22 @@
+					
+					Why do we need Exception Handling in C++?
+
+
+The following are the main advantages of exception handling over traditional error handling:
+
+1. Separation of Error Handling Code from Normal Code:-------------
+
+There are always if-else conditions to handle errors in traditional error handling codes. 
+These conditions and the code to handle errors get mixed up with the normal flow. This makes the code less readable and maintainable.
+ With try/catch blocks, the code for error handling becomes separate from the normal flow.
+
+2. Grouping of Error Types:------------
+
+In C++, both basic types and objects can be thrown as exceptions.
+We can  categorize them according to their types.
+
+Examples of Exception Handling in C++:---
+
+We will see in practical session:
+
+We need to add #include <exception>   header file for using predefined exceptions.
